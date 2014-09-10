@@ -1,0 +1,401 @@
+.pro-info{
+	width:950px;
+}
+
+.pro-pic{
+	width:350px;
+	height:400px;
+	float:left;
+	margin:0;
+	border: 1px solid #CDCDCD;
+	padding:25px;
+	text-align:center;
+}
+
+.pro-style{
+	width:548px;
+	height:auto;
+	float:left;
+	margin:0;
+}
+
+.pro-pic img{
+	width:350px;
+	height:400px;
+}
+
+.t-price{
+	color: #A10000;
+	font-size:12px;
+	font-family:"SimSun";
+	padding-left:10px;
+}
+
+.t-price strong{
+	font-size:24px;
+	font-family: Tahoma;
+	font-style:normal;
+	font-weight:normal;
+}
+
+
+.pro-style-content{
+	padding:15px;
+}
+
+.t-style{
+	font-size:12px;
+}
+
+.t-detail{
+	list-style: none outside none;
+	color: #333333;
+	padding-left:5px;
+	padding-top:0px;
+	margin:0px;
+}
+
+.t-detail li{
+	display: inline;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    text-indent: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+
+.t-detail li span{
+	margin-right:8px;
+}
+
+.t-sizearea,.t-amountarea,.t-colorarea,.t-score{
+	margin-bottom: 8px;
+    margin-left: 10px;
+    margin-top: 8px;
+    overflow: hidden;
+    width: 518px;
+}
+
+.t-sizearea label,.t-colorarea label,.t-score label{
+	color: #333333;
+    float: left;
+    line-height: 22px;
+	margin-right:15px;
+}
+
+.t-sizearea ul{
+ 	margin: 0;
+}
+
+.t-sizearea ul li{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C8C8C8;
+    color: #333333;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 24px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.t-colorarea ul li{
+    border: 1px solid #C8C8C8;
+    color: #333333;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 24px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+	width:50px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.t-colorarea ul li.red{
+	background:red;
+}
+
+.t-colorarea ul li.yellow{
+	background:yellow;
+}
+
+.t-colorarea ul li.white{
+	background:white;
+}
+
+.t-colorarea ul li.black{
+	background:black;
+}
+
+.t-colorarea ul li.green{
+	background:green;
+}
+
+.t-order-info{
+	padding-top:10px;
+}
+
+
+.t-size span{
+	background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    float: left;
+    height: 22px;
+    margin: 1px 1px 0;
+    padding: 0 9px;
+    width: auto;
+}
+
+.t-size, .t-color{
+	float: left;
+    width: 360px;
+}
+
+.t-size ul , .t-color ul{
+	padding-left:0;
+}
+
+.t-amountarea label{
+    color: #333333;
+    float: left;
+    line-height: 22px;
+	margin-right:15px;
+}
+
+.t-amountarea span{
+	color: #333333;
+}
+
+.t-amountarea input{
+	width:30px;
+	margin-left:0px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.t-color ul{
+	margin:0;
+}
+
+.t-score{
+	font-size:12px;
+	color:#666666;
+	padding:0px;
+}
+
+.t-score span{
+    float: left;
+    margin: 1px 1px 0;
+}
+
+.sprite-star{
+	background-image: url("../images/sprite.png");
+	background-position:-2084px 0px;
+    display: inline-block;
+    height: 13px;
+	width:14px;
+    vertical-align: top;
+    width: 14px;
+}
+
+.sprite-star-null{
+	background-image: url("../images/sprite.png");
+	background-position:-2084px -26px;
+    display: inline-block;
+    height: 13px;
+	width:14px;
+    vertical-align: top;
+    width: 14px;
+}
+
+.t-total{
+	padding-top: 15px;
+    width: 518px;
+}
+
+.shoppingBox{
+	float: right;
+    width: 170px;
+	margin-right:100px;
+    padding: 0;
+	font-size: 12px;
+	font-family: "SimSun";
+}
+
+.shoppingBox input{
+	color:#FFFFFF;
+	background: url("../images/sprite.png") no-repeat scroll -711px -350px #B80808;
+    display: inline-block;
+    float: right;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 46px;
+ 	margin-right: 10px;
+    padding-left: 49px;  
+    width: 160px;
+	border:medium none;
+}
+
+.pro-comment, .pro-detail-info{
+	border-top:#D8D8D8 3px solid;
+	margin-top:15px;
+	padding-top:5px;
+}
+
+.user-comment{
+	display: inline;
+    float: left;
+    margin-left: 12px;
+    width: 450px;
+	color: #333333;
+	font-size:12px;
+	font-family: "SimSun";
+	height:270px;
+	overflow:hidden;
+}
+
+.user-comment h3{
+	color: #DF0012;
+    font-weight: bold;
+    line-height: 18px;
+    padding-top:5px;
+}
+
+.user-comment ul{
+	padding:0;
+	margin:0;
+}
+
+.user-comment ul li{
+	border-bottom: 1px dashed #C0C0C0;
+    color: #666666;
+    line-height: 18px;
+    padding: 6px 0 7px;
+	list-style: none outside none;
+}
+
+.user-comment ul li em{
+	display: inline-block;
+	font-style: normal;
+    font-weight: normal;
+	color: #7DB64A;
+}
+
+.my-comment-box{
+	height:230px;
+	float:left;
+	width:285px;
+	padding:25px;
+}
+
+.my-comment-box textarea{
+	border: 1px solid #D8D8D8;
+    color: #B0B0B0;
+    height: 91px;
+    line-height: 16px;
+    overflow: auto;
+    padding: 5px 7px;
+    width: 270px;
+	float:left
+}
+
+.my-comment-box input{
+	background: none repeat scroll 0 0 #88C949;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 21px;
+    margin: 3px 0 0 236px;
+    text-align: center;
+    width: 50px;
+}
+
+.size-table{
+	margin:0;
+	padding:0;
+}
+
+.size-table h4{
+	color: #999999;
+    font-weight: bold;
+	font-size:12px;
+}
+
+/* --------  size-table ----------*/
+
+#customers-size
+{
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:100%;
+  border-collapse:collapse;
+}
+
+#customers-size td, #customers-size th 
+{
+  font-size:1em;
+  border:1px solid #98bf21;
+  padding:3px 7px 2px 7px;
+}
+
+#customers-size th 
+{
+  font-size:1.1em;
+  text-align:center;
+  padding-top:5px;
+  padding-bottom:4px;
+  background-color:#A7C942;
+  color:#ffffff;
+}
+
+#customers-size tr.alt td 
+{
+  color:#000000;
+  background-color:#EAF2D3;
+}
+  
+.to-sizetable{
+	background:url("../images/sprite.png") no-repeat scroll -892px -353px transparent;
+    float:right;
+    line-height:23px;
+    margin-right:12px;
+    padding-left:17px;
+	float:right;
+}
+
+.to-sizetable a:link,.to-sizetable a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+.to-sizetable a:hover{
+    color: #A10000;
+    text-decoration: none;
+}
+
+/*--------- wash-info --------*/ 
+.wash-info{
+	border-top:#D8D8D8 1px solid;
+	margin-top:50px;
+	padding-top:5px;
+	font-size:12px;
+}
+
+.pic-display{
+	text-align: center;
+}

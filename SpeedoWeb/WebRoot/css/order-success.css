@@ -1,0 +1,317 @@
+html {
+	font-family: "Microsoft Yahei","Segoe UI",Verdana,Arial,Helvetica,sans-serif,"宋体";
+}
+
+body {
+	/*  background-color: #fff996; */
+	margin:0;
+}
+
+#background{
+	background-color:#FFFFFF;
+	min-height: 768px;
+}
+
+#header{
+	background:url(../images/bg-body.jpg) repeat;
+	height:80px;
+	width:100%;
+	margin-bottom:0;
+}
+
+#header-inner{
+	height:80px;
+	margin:0 auto;
+	position:relative;
+	width:990px;
+}
+
+.logo{
+	padding-top:15px;
+	margin-left:50px;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	border:0 none;
+}
+
+.clearfix{
+	clear:both;
+	content:" ";
+	display:block;
+	height:0;
+}
+
+#site-nav{
+	clear:both;
+	display:block;
+	content:"";
+	height:0;
+	font-size:12px;
+}
+
+.nav-middle{
+	width:950px;
+	height:21px;
+	margin:0 auto;
+	padding:3px 0;
+	position:relative;
+	z-index:10000;
+}
+
+p#login-info-right a{
+	color:#000000;
+
+}
+
+#login-info-left{
+	float:left;
+	margin:0;
+	padding:0;
+	line-height:22px;
+}
+
+#login-info-right{
+	float:right;
+	margin:0;
+	padding:0;
+	line-height:22px;
+}
+
+#comm-header{
+	font:12px/1.5;
+}
+
+#comm-header-inner{
+	height:40px;
+	margin:0 auto;
+	padding:20px 0 36px;
+	width:950px;
+}
+
+#cart-logo{
+	background:url(/images/cartlogo.png) no-repeat scroll 0 0 transparent;
+	height:40px;
+	padding:0;
+	width:131px;
+	margin:0;
+}
+
+#content{
+	margin:0 auto;
+	width:950px !important;
+	text-align:left !important;
+}
+
+.flow-steps{
+	margin:0 0 75px;
+	overflow:hidden;
+}
+
+ol.step-list{
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+}
+
+li.done{
+	background-color:#FFEDA2;
+	background-position:100% -46px;
+	color:#393836;
+}
+
+li.current-prev{
+		background-position:100% -23px !important;
+}
+
+.flow-steps li{
+	
+}
+
+.step-list li{
+	width:175px;
+}
+
+.flow-steps li{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	line-height:23px;
+	overflow:hidden;
+	padding:0 15px 0 0;
+	text-align:center;
+}
+
+.flow-steps li.done .first{
+	background:#FFEDA2;
+}
+
+li.current{
+	background-color:#990D1B;
+	color:#FFFFFF;
+	overflow:visible;
+	position:relative;
+}
+
+li.last{
+	background-position:100%;
+	-138px;
+	width:173px;
+	color:#404040;
+	background-color:#DBDBDB;
+	border-left:solid #ffffff thin;
+}
+
+
+
+/*  ------------------ footer ------------------- */
+
+#footer{
+	margin-top:100px;
+	width: 950px;
+    border-top: 1px solid #D1D7DC;
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#speedo-desc{
+	content:"";
+	display:block;
+	margin-bottom:25px;
+	position:relative;
+	text-align:left;
+	width:990px;
+	height:auto;
+}
+
+#speedo-desc dl{
+/*	float:left; */
+	width:220px;
+}
+
+#speedo-desc dt{
+	border-bottom:1px solid #E2E2E2;
+	margin:0 40px 6px 0;
+	padding-bottom:4px;
+}
+
+#speedo-desc dt p{
+	display:block;
+	height:10px;
+	width:80px;
+	font-family:"宋体";
+	font-size:14px;
+	color:#666666;
+	font-weight:bold;
+}
+
+#speedo-desc dd{
+	margin-right:40px;
+}
+
+#speedo-desc  dl dd span{
+	color:#666666;
+	display:block;
+	height:22px;
+	line-height:1.8;
+	white-space:nowrap;
+}
+
+#copyright{
+	font-size:15px;
+	clear:both;
+	margin-top:20px;
+	text-align:center;
+	margin-bottom:80px;
+	padding-top:20px;
+}
+
+.TM-advise{
+	margin-top:50px;
+	border-top:1px solid #C9C9C9;
+	margin: 0 auto;
+    text-align: left !important;
+    width: 950px !important;
+}
+
+.img-walls-adv{
+	text-align:center;
+	margin-top:10px;
+}
+
+.TM-advise p
+{
+    height: 20px;
+	color: #666666;
+    font-size: 16px;
+	font-family:"Microsoft Yahei","Segoe UI",Verdana,Arial,Helvetica,sans-serif,"宋体";
+}
+
+.img-walls-adv img{
+	width:780px;
+	height:320px;
+}
+
+.ad-fs{
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    margin: 25px 0 0 0;
+    padding: 10px;
+}
+
+.ad-fs legend{
+	font-family:"Microsoft Yahei","Segoe UI",Verdana,Arial,Helvetica,sans-serif,"宋体";
+	color: #666666;
+}
+
+/* -------------- apply-success   -----------------*/
+.apply-info{
+	height:210px;
+	background-color:#FFFFB9;	
+}
+
+
+.apply-info img{
+	width:320px;
+	height:210px;
+	float:left;
+	margin:0 0 0 100px;
+}
+
+.apply-info p{
+	float:left;
+	margin:0;
+	width:450px;
+	padding-left:35px;
+}
+
+p.apply-text{
+	font-size:18px;
+	color:#7ABF40;
+	font-weight:normal;
+	padding-top:70px;
+}
+
+.apply-info p label{
+	color:#8C8B89;
+}
+
+.apply-info p span{
+	color:#F38401;
+}
+
+#order-total{
+	font-weight:bold;
+}
+
+.apply-success{
+
+    margin: 0 auto;
+    text-align: left !important;
+    width: 950px !important;
+}

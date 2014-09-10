@@ -1,0 +1,268 @@
+html {
+	font-family: "Microsoft Yahei","Segoe UI",Verdana,Arial,Helvetica,sans-serif,"宋体";
+}
+
+body {
+	/*  background-color: #fff996; */
+	margin:0;
+	min-height:1150px;
+}
+
+
+#background{
+	background-color:#FFFFFF;
+	min-height: 768px;
+}
+
+#header{
+	background:url(../images/bg-body.jpg) repeat; 
+	height:80px;
+	width:100%;
+	margin-bottom:0;
+}
+
+#header-inner{
+	height:80px;
+	margin:0 auto;
+	position:relative;
+	width:990px;
+}
+
+.logo{
+	padding-top:15px;
+	margin-left:50px;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	border:0 none;
+}
+
+.clearfix{
+	clear:both;
+	content:" ";
+	display:block;
+	height:0;
+}
+
+#site-nav{
+	clear:both;
+	display:block;
+	content:"";
+	height:0;
+	font-size:12px;
+}
+
+.nav-middle{
+	width:950px;
+	height:21px;
+	margin:0 auto;
+	padding:3px 0;
+	position:relative;
+	z-index:10000;
+}
+
+p#login-info-right a{
+	color:#000000;
+
+}
+
+
+
+#login-info-left{
+	float:left;
+	margin:0;
+	padding:0;
+	line-height:22px;
+}
+
+#login-info-right{
+	float:right;
+	margin:0;
+	padding:0;
+	line-height:22px;
+}
+
+#comm-header{
+	font:12px/1.5;
+}
+
+#comm-header-inner{
+	height:40px;
+	margin:0 auto;
+	padding:20px 0 20px;
+	width:950px;
+}
+
+#cart-logo{
+	background:url(/images/cartlogo.png) no-repeat scroll 0 0 transparent;
+	height:56px;
+	padding:0;
+	width:151px;
+	margin:0;
+}
+
+#content{
+	margin:0 auto;
+	width:950px !important;
+	text-align:left !important;
+}
+
+#diy-left-content{
+	width:400px;
+	padding:25px 14px 14px 14px;
+	height:auto;
+	float:left;
+	text-align:center;
+}
+
+#diy-right-content{
+	width:400px;
+	padding:0 30px 30px 30px;
+	float:left;
+	margin:0 auto;
+	width:auto;
+}
+
+#diy-left-content img{
+	max-height:386px;
+	max-width:386px;
+}
+
+form h1{
+	font-weight:normal;
+	font-size:24px;
+	color:#333333;
+	font-family:"Microsoft Yahei","Segoe UI",Verdana,Arial,Helvetica,sans-serif;
+	
+}
+
+.title-tip{
+	width:370px;
+	font-size:12px;
+}
+
+span.red,label.red{
+	color:#B22B39;
+	font-size:12px;
+}
+
+.work-info p label,.viewmypic label{
+	font-size:12px;
+}
+
+.work-info-title{
+	font-weight:normal;
+}
+
+p span{
+	font-size:12px;
+}
+
+.works-tag{
+	border:1px dashed #666666;
+	float:left;
+	padding:5px;
+	width:392px;
+}
+
+.works-tag label{
+	background:none repeat scroll 0 0 #E1ECF4;
+	border:1px solid;
+	color:#518CA8;
+	cursor:pointer;
+	float:left;
+	font-size:12px;
+	margin-left:5px;
+	margin-top:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.description-text, #imafile, .work-title{
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #cccccc;
+	border-radius:4px 4px 4px 4px;
+	display:inline-block;
+	margin:0;
+	padding:1px;
+}
+
+.submit-button{
+	background-color:#46B271;
+	border:0 none;
+	color:#ffffff;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	height:50px;
+	width:150px;
+}
+
+.submit-div{
+	clear:both;
+	padding-top:20px;
+}
+
+.submit-div p{
+	margin:0;
+}
+
+p.promise{
+	clear:both;
+	margin:0;
+	width:392px;
+	padding-top:16px;
+}
+
+.info-field{
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #cccccc;
+	border-radius:4px 4px 4px 4px;
+	display:inline-block;
+	margin:0;
+	padding:20px;
+	
+}
+
+.img-view-field{
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #cccccc;
+	border-radius:4px 4px 4px 4px;
+	display:inline-block;
+	margin:0;
+	padding:10px;
+	
+}
+
+.imgwall-field{
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #cccccc;
+	border-radius:4px 4px 4px 4px;
+	display:inline-block;
+	margin:0;
+	padding:10px;
+}
+
+#diy-left-content p{
+	font-size:18px;
+	color:#666666;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+legend{
+	font-weight: normal;
+	color:#333333;
+}
+
+#copyright{
+	font-size:15px;
+	color:#666666;
+	clear:both;
+	padding-top:88px;
+	text-align:center;
+}

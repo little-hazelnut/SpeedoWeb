@@ -1,0 +1,79 @@
+/* ----------------  pro-list ------------------*/
+
+.pro-img{
+	width:204px;
+	height:252px;
+	text-align:center;
+}
+
+.pro-txt{
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	vertical-align:middle;
+	overflow:hidden;
+	font-size:12px;
+}
+
+.pro-txt a{
+	color: #333333;
+    text-decoration:none;
+	outline:medium none;	
+}
+
+.pro-txt a:hover{
+    text-decoration:underline;
+}
+
+.pro-price-men{
+	background: url("../images/men_logo.jpg") no-repeat scroll 60px center transparent;
+    color: #7DB64A;
+	height: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+	font-size: 12px;
+}
+
+.pro-price-women{
+	background: url("../images/women_logo.jpg") no-repeat scroll 60px center transparent;
+    color: #7DB64A;
+	height: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+	font-size: 12px;
+}
+
+/* ----------------  allpages ------------------*/
+.allpages{
+    clear: both;
+    height: 32px;
+    margin: 10px 0;
+    text-align: center;
+	overflow:hidden;
+	font-size:12px;
+}
+
+.allpages .curpage{
+	background:none repeat scroll 0 0 #7DB64A;
+	color:#FFFFFF;
+}
+
+.allpages a{
+	border:1px solid #BDBDBD;
+	display:inline-block;
+	font-weight:normal;
+	margin-left:5px;
+	margin-right:5px;
+	padding:2px 5px;
+	color:#000000;
+}
+
+a{
+ text-decoration:none;
+}
+
+.allpages a:hover{
+	text-decoration:underline;
+}

@@ -1,0 +1,192 @@
+html {
+	font-family: 'Trebuchet MS', sans-serif, Arial, Helvitica;
+}
+
+body {
+	background-color: #fff996;
+	margin: 0;
+}
+
+#background{
+	background-color:#FFFFFF;
+	min-height: 768px;
+}
+
+#header{
+	background:url(../images/bg-body.jpg) repeat;
+	height:80px;
+	width:100%;
+	margin-bottom:0;
+}
+
+#header-inner{
+	height:80px;
+	margin:0 auto;
+	position:relative;
+	width:990px;
+}
+
+.logo{
+	padding-top:15px;
+	margin-left:50px;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	border:0 none;
+}
+
+.clearfix{
+	clear:both;
+	content:" ";
+	display:block;
+	height:0;
+}
+
+#content{
+	padding-top:49px;
+	margin:0 auto;
+	width:990px;
+}
+
+.adv-pic{
+	display:inline;
+	float:left;
+	width:528px;
+}
+
+.adv-pic img
+{
+	margin:10px 50px 0 0;
+	float:right;
+}
+
+.form{
+	display:inline;
+	float:left;
+	width:312px;
+}
+
+.form-content{
+	position:relative;
+	border:2px solid #999999;
+	border-width:thin;
+	margin:1px;
+	margin-top:10px;
+	padding:25px 26px 20px;
+}
+
+.title-text label{
+	color: #606060;
+	display:block;
+	font-weight:bold;
+	font-size: 15px;
+}
+
+.input-text{
+	border-color:#CBCBCB;
+	color:#9B9B9B;
+	height:18px;
+	line-height:18px;
+	margin-right:3px;
+	vertical-align:middle;
+	width:242px;
+}
+.login-textbox{
+	width:242px;
+}
+
+a{
+	color: #3366CC;
+}
+
+p.free-rgt{
+	font-size: 12px;
+	padding-bottom:18px;
+}
+
+.free-rgt span{
+	float:right;
+}
+
+.login-button{
+/*	background-color:#FF0000;  */
+	background:url(../images/bg-body.jpg) repeat;
+	background-position:0 0;
+	height:30px;
+	line-height:30px;
+	width:254px;
+	border:0 none;
+	color: white;
+	cursor:pointer;
+	display:inline-block;
+	font-size:14px;
+	font-weight:bold;
+	overflow:hidden;
+	vertical-align:middle;
+}
+
+#footer{
+ background-position:0 -262px;
+ background-repeat:repeat-x;
+ padding-top:15px;
+ position:relative;
+ border-top:1px solid #D1D7DC;
+ clear:both;
+ margin-top:80px;
+ font:12px tahoma,arial,宋体;
+ text-align:center;
+}
+
+#speedo-desc{
+	content:"";
+	display:block;
+	margin-bottom:25px;
+	position:relative;
+	text-align:left;
+	width:990px;
+	height:auto;
+}
+
+#speedo-desc dl{
+/*	float:left; */
+	width:220px;
+}
+
+#speedo-desc dt{
+	border-bottom:1px solid #E2E2E2;
+	margin:0 40px 6px 0;
+	padding-bottom:4px;
+}
+
+#speedo-desc dt p{
+	display:block;
+	height:10px;
+	width:80px;
+	font-family:"宋体";
+	font-size:14px;
+	color:#666666;
+	font-weight:bold;
+}
+
+#speedo-desc dd{
+	margin-right:40px;
+}
+
+#speedo-desc  dl dd span{
+	color:#666666;
+	display:block;
+	height:22px;
+	line-height:1.8;
+	white-space:nowrap;
+}
+
+#copyright{
+	font-size:15px;
+	clear:both;
+	margin-top:20px;
+}
+

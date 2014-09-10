@@ -1,0 +1,434 @@
+html {
+	font-family: 'Trebuchet MS', sans-serif, Arial, Helvitica;
+}
+
+body {
+	/*  background-color: #fff996; */
+	margin:0;
+}
+
+#background{
+	background-color:#FFFFFF;
+	min-height: 768px;
+}
+
+#header{
+	background:url(../images/bg-body.jpg) repeat;
+	height:80px;
+	width:100%;
+	margin-bottom:0;
+}
+
+#header-inner{
+	height:80px;
+	margin:0 auto;
+	position:relative;
+	width:990px;
+}
+
+.logo{
+	padding-top:15px;
+	margin-left:50px;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	border:0 none;
+}
+
+.clearfix{
+	clear:both;
+	content:" ";
+	display:block;
+	height:0;
+}
+
+#site-nav{
+	clear:both;
+	display:block;
+	content:"";
+	height:0;
+	font-size:12px;
+}
+
+.nav-middle{
+	width:950px;
+	height:21px;
+	margin:0 auto;
+	padding:3px 0;
+	position:relative;
+	z-index:10000;
+}
+
+p#login-info-right a{
+	color:#000000;
+
+}
+
+#login-info-left{
+	float:left;
+	margin:0;
+	padding:0;
+	line-height:22px;
+}
+
+#login-info-right{
+	float:right;
+	margin:0;
+	padding:0;
+	line-height:22px;
+}
+
+#comm-header{
+	font:12px/1.5;
+}
+
+#comm-header-inner{
+	height:40px;
+	margin:0 auto;
+	padding:20px 0 36px;
+	width:950px;
+}
+
+#cart-logo{
+	background:url(/images/cartlogo.png) no-repeat scroll 0 0 transparent;
+	height:40px;
+	padding:0;
+	width:131px;
+	margin:0;
+}
+
+#content{
+	margin:0 auto;
+	width:950px !important;
+	text-align:left !important;
+}
+
+.flow-steps{
+	margin:0 0 20px;
+	overflow:hidden;
+}
+
+ol.step-list{
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+}
+
+li.done{
+	background-color:#FFEDA2;
+	background-position:100% -46px;
+	color:#393836;
+}
+
+li.current-prev{
+		background-position:100% -23px !important;
+}
+
+.flow-steps li{
+	
+}
+
+.step-list li{
+	width:175px;
+}
+
+.flow-steps li{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	line-height:23px;
+	overflow:hidden;
+	padding:0 15px 0 0;
+	text-align:center;
+}
+
+.flow-steps li.done .first{
+	background:#FFEDA2;
+}
+
+li.current{
+	background-color:#990D1B;
+	color:#FFFFFF;
+	overflow:visible;
+	position:relative;
+}
+
+li.last{
+	background-position:100%;
+	-138px;
+	width:173px;
+	color:#404040;
+	background-color:#DBDBDB;
+	border-left:solid #ffffff thin;
+}
+
+#cart{
+	margin-top:20px;
+	position:relative;
+	padding-top:20px;
+	margin-bottom:30px;
+}
+
+.cart-table{
+	margin-bottom:20px;
+	width:100%;
+}
+
+table{
+	font-size:inherit;
+	border-collapse:collapse;
+	border-spacing:0;
+	font-size:12px;
+}
+
+thead th{
+	border-bottom:3px solid #A7CBFF;
+	color:#9D9D9D;
+	text-align:center;
+	font-style:normal;
+	font-weight:normal;
+	padding::10px 5px 0;
+	line-height:27px;
+}
+
+thead tr{
+	background-color:#E2F2FF;
+	height:40px;
+	text-align:center;
+}
+
+th.s-title{
+	width:360;	
+}
+
+th img{
+	vertical-align:middle;
+}
+
+.cart-item td{
+	border-bottom:1px solid #B4D0FF;
+	background:none repeat scroll 0 0 #FBFCFF;
+	font-weight:100;
+	font-size:13px;
+	height:30px;
+	padding:5px 0; 
+	text-align:center;
+}
+
+td.s-title{
+	color:#2652A5;
+	width:280px;
+}
+
+td.s-total{
+	color:#CC0000;
+	font-weight:bold;
+}
+
+.s-del input{
+	border-style:none;
+	cursor:pointer;
+	color:#2652A5;
+}
+
+.s-del input:hover{
+	color:#FF6600;
+}
+
+#cert-finish{
+	height:35px;
+	padding:5px 0px;
+}
+
+#cashier{
+    background: none repeat scroll 0 0 #F3F3F3;
+    border: 1px solid #CCCCCC;
+    height: 33px;
+    line-height: 33px;
+    position: relative;
+    width: 950px;
+    z-index:10;
+}
+
+.cashier-left{
+	height:33px;
+	padding-left:5px;
+}
+
+.cashier-left span{
+	margin-right:16px;
+	float:left;
+	font-size:12px;
+}
+
+.m-chk-del{
+	border-style:none;
+	cursor:pointer;
+}
+
+.cashier-left input
+{
+    margin-right:3px;
+	vertical-align: middle;
+}
+
+.m-chk-del:hover{
+	color:#FF6600;
+}
+
+.cashier-right{
+	height:33px;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.m-fee-box{
+	margin-right:10px;
+	font-size:12px;
+}
+
+.cashier-right span{
+	float:left;
+	line-height:33px;
+}
+
+.m-total-fee{
+	color:#CC0000;
+	font:bold 24px tahoma;
+	margin:0 3px;
+	position:relative;
+	text-shadow:0 1px 1px #CCCCCC;
+	top:3px;
+}
+
+.m-go{
+  	background-color:#FF9428;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    width: 125px;
+	margin:-1px -1px 0 0;
+}
+
+.s-amount input{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #8AB5E0;
+    color: #666666;
+    font-weight: bold;
+    height: 15px;
+    ime-mode: disabled;
+    margin: 0 3px;
+    padding: 1px 3px;
+    text-align: center;
+    width: 28px
+}
+
+/*  ------------------ footer ------------------- */
+
+#footer{
+	margin-top:100px;
+	width: 950px;
+    border-top: 1px solid #D1D7DC;
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#speedo-desc{
+	content:"";
+	display:block;
+	margin-bottom:25px;
+	position:relative;
+	text-align:left;
+	width:990px;
+	height:auto;
+}
+
+#speedo-desc dl{
+/*	float:left; */
+	width:220px;
+}
+
+#speedo-desc dt{
+	border-bottom:1px solid #E2E2E2;
+	margin:0 40px 6px 0;
+	padding-bottom:4px;
+}
+
+#speedo-desc dt p{
+	display:block;
+	height:10px;
+	width:80px;
+	font-family:"宋体";
+	font-size:14px;
+	color:#666666;
+	font-weight:bold;
+}
+
+#speedo-desc dd{
+	margin-right:40px;
+}
+
+#speedo-desc  dl dd span{
+	color:#666666;
+	display:block;
+	height:22px;
+	line-height:1.8;
+	white-space:nowrap;
+}
+
+#copyright{
+	font-size:15px;
+	clear:both;
+	margin-top:20px;
+	text-align:center;
+	margin-bottom:80px;
+	padding-top:20px;
+}
+
+.TM-advise{
+	margin-top:50px;
+}
+
+.img-walls-adv{
+	text-align:center;
+	margin-top:10px;
+}
+
+.TM-advise p
+{
+    display: inline;
+    height: 17px;
+    margin: 13px 0 0 20px;
+    width: 124px;
+	color: #666666;
+    font-size: 16px;
+    padding-bottom:25px;
+    padding-top: 25px;
+	font-family:"Microsoft Yahei","Segoe UI",Verdana,Arial,Helvetica,sans-serif,"宋体";
+}
+
+.img-walls-adv img{
+	width:780px;
+	height:320px;
+}
+
+.ad-fs{
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    margin: 25px 0 0 0;
+    padding: 10px;
+}
+
+.ad-fs legend{
+	font-family:"Microsoft Yahei","Segoe UI",Verdana,Arial,Helvetica,sans-serif,"宋体";
+	color: #666666;
+}

@@ -1,0 +1,186 @@
+html {
+	font-family: 'Trebuchet MS', sans-serif, Arial, Helvitica;
+}
+
+body {
+/*	background-color: #fff996; */
+	background-color:#FFFFFF;
+	margin: 0;
+}
+
+#background {
+/*	background: url(../images/bg-body.jpg) repeat; */
+	min-height: 768px;
+	border-top: 1px solid #cc9f0f;
+}
+
+.header{
+	background: url(../images/bg-body.jpg) repeat;
+	padding-left:15%;
+}
+
+#logo{
+/* 	margin:2% auto 2% 15%;  */  
+}
+
+#main-content{
+	margin:3% auto 3% 20%;
+}
+
+input.textbox{
+ height:30px;
+ width: 263px;
+ padding-left: 6px;     /*输入文本起始结束位置*/ 
+ padding-right: 6px;     
+ /*border-top-width: 1px;   
+ border-right-width: 1px;
+ border-bottom-width: 1px;
+ border-left-width: 1px;
+ border-top-style: none;
+ border-right-style: none;
+ border-bottom-style: none;
+ border-left-style: none;
+ */
+ border-color:#CBCBCB;
+ border-width:1px;
+ color:#333333;
+ float:left;
+}
+
+input.verifycode-text{
+ height: 30px;
+ width: 108px;
+ padding-left: 6px;
+ padding-right: 6px;   
+/* border-top-width: 0px;   
+ border-right-width: 0px;
+ border-bottom-width: 0px;
+ border-left-width: 0px;
+ border-top-style: none;
+ border-right-style: none;
+ border-bottom-style: none;
+ border-left-style: none;
+ */
+ border-color:#CBCBCB;
+ border-width:1px;
+ color:#333333;
+ float:left;
+}
+
+label.textbox{
+ height:32px;
+ width:152px;
+ text-align:right;
+}
+
+.titlebar{
+ background: url(../images/bg-body.jpg) repeat;
+ height:46px;
+ text-align:center; 
+ width:100%;
+ border-bottom-style:solid;
+ border-bottom-width:thin;
+ border-bottom-color:#CCCCCC;
+}
+
+.titlebar-middle{
+ width:78%;
+}
+
+.titlebar-right {
+    float: right;
+    height: 46px;
+    line-height: 46px;
+    padding-right: 20px;
+	font-size:12px;
+}
+
+.titlebar-left {
+	float:left;
+	font-size:17px;
+	font-weight:bold;
+	line-height:46px;
+	padding-left:20px;
+	padding-right:20px;
+	margin-left:257px;
+	border-style:none;
+	text-align:center;
+}
+
+.clear {
+  clear: both;
+}
+
+p.text{
+ height:32px;
+ margin-top:15px;
+ display:block;
+ position:relative;
+}
+
+img.rgt-verifyCode{
+ height:30px;
+ float:left;
+}
+
+p.protocol{
+ padding-left:152px;
+ height::12px;
+ font-size:12px;
+}
+
+#submit{
+    border: 0 none;
+    color: white;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    height: 34px;
+    width: 109px;
+}
+
+#footer{
+ text-align:center;
+}
+
+.rgt-button{
+  background: url("../images/bg-button.jpg") no-repeat scroll 0 0 transparent;
+  color: white;
+  border:0 none;
+  display: block;
+  font-family: 'CorbenBold';
+  font-size: 14px;
+  height: 34px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 109px;
+  cursor: pointer;
+  margin-left:152px;
+}
+
+label.textbox{
+ height:32px;
+ font-size:14px;
+ padding-right:15px;
+ width:137px;
+ text-align:right;
+ float:left;
+ line-height: 32px;
+}
+
+#verifycode{
+	float:left;
+	margin-left:7px;
+}
+
+a{
+	color: #3366CC;
+	text-decoration:none;
+}
+
+
+
+
+
+

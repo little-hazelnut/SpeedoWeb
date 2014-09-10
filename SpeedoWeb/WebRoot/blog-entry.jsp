@@ -1,0 +1,365 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page import="edu.csu.speedo.dto.*" %>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<base href="<%=basePath%>">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>商品详情 - 天喵TMIAO.COM</title>
+<link rel="stylesheet" href="css/style.css" type="text/css"
+	charset="utf-8" />
+<link rel="stylesheet" href="css/blog-entry.css" type="text/css"
+	charset="utf-8" />
+	
+	<% String login = null; %>
+	
+		<%
+		System.out.println(session.getId());
+		System.out.println(session.getAttribute("login"));
+			if(session.getAttribute("login")!=null ){
+			login=session.getAttribute("userName").toString();
+				 System.out.println(login);
+			}
+			else{
+				login =null;
+			}
+		%>
+	
+	<script type="text/javascript" >
+	function chcsize(sizenum){
+	
+		document.getElementById("S").className = "";
+		document.getElementById("M").className = "";
+		document.getElementById("L").className = "";
+		document.getElementById("XL").className = "";
+		document.getElementById("XXL").className = "";
+		document.getElementById("XXXL").className = "";
+		document.getElementById(sizenum).className = "size-mouseon";
+	
+	}
+	
+	function chcColor(color){
+		document.getElementById("selectColor").style.display = "inline-block";
+		if(color=="red")
+			document.getElementById("colorText").innerHTML = "红";
+		if(color=="green")
+			document.getElementById("colorText").innerHTML = "绿";
+		if(color=="black")
+			document.getElementById("colorText").innerHTML = "黑";
+		if(color=="white")
+			document.getElementById("colorText").innerHTML = "白";
+		if(color=="yellow")
+			document.getElementById("colorText").innerHTML = "黄";
+	
+	}
+	
+	
+	</script>
+	
+
+</head>
+
+<body>
+	<div id="background">
+		<div id="header">
+			<div id="inner-header">
+				<span id="connect"> 
+						<a href="index.jsp" target="_self">
+							<img width="150" height="50" src="images/mylogo.png" alt="爱生活，爱设计，我是设计师">
+						 </a>
+				 </span> 
+						
+				<% System.out.println(login); if( login!=null){  %>
+				<span id="infos-hidden">
+					<span>HI,&nbsp;${sessionScope.user.userNameString}！&nbsp;</span>
+					<a href="/SpeedoWeb/servlet/ControlLogout">退出</a>|
+					<a href="servlet/GetProduct">购物车</a>
+				</span>
+				<%} else { %>
+				<span id="infos">
+					<span>欢迎来天喵！</span>
+					<a href="login.html">请登陆</a>
+					<a href="register.jsp">免费注册</a>|
+					<a href="servlet/GetProduct">购物车</a>
+				</span>
+				<% } %>
+					
+			</div><!-- inner-header -->
+		</div><!-- /#header -->
+		<div id="navigation-div">
+			<div id="inner-nav">
+				<ul id="navigation">
+					<li class="li-index"><a href="index.jsp">主页</a>
+					</li>
+					<li class="li-shop selected"><a href="servlet/ListProduct">商城</a>
+					</li>
+					<li class="li-blog"><a href="servlet/ListPicture">设计师作品</a>
+					</li>
+					<li class="li-diy-work"><a href="diy-work.jsp">自己设计</a>
+					</li>
+					<li class="li-imageswall"><a href="imageswall/imageswall.html">天喵照片墙</a>
+					</li>
+					<li class="about"><a href="about.html">关于我们</a>
+					</li>
+					<li class="contact-us"><a href="contact-us.html">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- navigation-div -->
+		<div id="page">
+			<div id="contents">
+				<div id="blogs">
+					<div class="pro-info">
+						<div class="pro-pic">
+						
+							<img src="${requestScope.pro.imgSrc} " alt="shirt" />
+						</div>
+						<div class="pro-style">
+							<div class="pro-style-content">
+								<h3>2013新款天喵个性短袖宽松T恤</h3>
+								<div class="t-price">
+									售价: <span> ￥ <strong>${requestScope.pro.productPrice}</strong>
+									</span>
+								</div>
+								<div class="t-score">
+									<label>用户评分：</label> <span class="sprite-star"></span> <span
+										class="sprite-star"></span> <span class="sprite-star"></span>
+									<span class="sprite-star"></span> <span class="sprite-star"></span>
+								</div>
+								<div class="t-style">
+									<ul class="t-detail">
+										<li><span>主图来源：</span>自主实拍图</li>
+										<li><span>品牌：</span>天喵</li>
+										<li><span>板型：</span>修身</li>
+										<li><span>货号：</span>9840210</li>
+										<li><span>厚薄：</span>薄款</li>
+										<li><span>风格：</span>休闲</li>
+										<li><span>款式：</span>套头</li>
+										<li><span>组合形式：</span>单件</li>
+										<li><span>袖长:</span>短袖</li>
+										<li><span>领子:</span>圆领</li>
+									</ul>
+									<div style="clear:both"></div>
+									<div class="t-order-info">
+										<div class="t-sizearea">
+											<label>商品尺码:</label>
+											<div class="t-size">
+												<ul>
+													<li onClick="chcsize('S')"><span id="S">S</span>
+													</li>
+													<li onClick="chcsize('M')"><span id="M" >M</span>
+													</li>
+													<li onClick="chcsize('L')"><span id="L">L</span>
+													</li>
+													<li onClick="chcsize('XL')"><span id="XL" >XL</span>
+													</li>
+													<li onClick="chcsize('XXL')"><span id="XXL">XXL</span>
+													</li>
+													<li onClick="chcsize('XXXL')"><span id="XXXL">XXXL</span>
+													</li>
+												</ul>
+												<div class="to-sizetable">
+													<a class="track"  href="#a1"
+														name="item-item-select-viewsize">查看尺码表</a>
+												</div>
+											</div>
+										</div>
+										<!-- t-sizearea -->
+										<div class="t-colorarea">
+											<label>颜色分类:</label>
+											<div class="t-color">
+												<ul>
+													<li class="red" id="red" onClick="chcColor('red')"><span></span>
+													</li>
+													<li class="green" id="green" onClick="chcColor('green')"><span></span>
+													</li>
+													<li class="yellow" id="yellow" onClick="chcColor('yellow')"><span></span>
+													</li>
+													<li class="black" id="black" onClick="chcColor('black')"><span></span>
+													</li>
+													<li class="white" id="white" onClick="chcColor('white')"><span></span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- t-colorarea -->
+										<div class="t-amountarea">
+											<label>购买数量:</label> <input name="t-amount" id='num'
+											value='1'	type="text" /> <span>件</span>
+											<div  id="selectColor" style="display:none;">您选择了：<span id="colorText">红</span>&nbsp;色</div>
+										</div>
+										<!-- t-amountarea -->
+									</div>
+									<!-- t-order-info -->
+									<div class="t-total">
+										<div class="shoppingBox">
+											<input type="button" class="add-cart" value="放入购物车" />
+										</div>
+										<div style="clear:both;"></div>
+									</div>
+									<!-- t-total -->
+								</div>
+								<!-- pro-style-content -->
+							</div>
+							<!--	pro-style -->
+						</div>
+						<!-- pro-info -->
+						<div style="clear:both;"></div>
+						<div class="pro-comment">
+							<div class="user-comment">
+								<h3>喵星人评论：</h3>
+								<ul>
+									<li><em>小榛：</em>一只黑猫把一只白猫从河裏救起来了,你知道後来那白猫对黑猫说什麽吗?它说：“喵——”
+									</li>
+									<li><em>小榛：</em>一只黑猫把一只白猫从河裏救起来了,你知道後来那白猫对黑猫说什麽吗?它说：“喵——”
+									</li>
+									<li><em>小榛：</em>一只黑猫把一只白猫从河裏救起来了,你知道後来那白猫对黑猫说什麽吗?它说：“喵——”
+									</li>
+									<li><em>小榛：</em>一只黑猫把一只白猫从河裏救起来了,你知道後来那白猫对黑猫说什麽吗?它说：“喵——”
+									</li>
+								</ul>
+							</div>
+							<div class="my-comment-box">
+								<textarea id="my-comment">我的评价...</textarea>
+								<input id="comment-share" class="comment-button" type="button"
+									value="发表" />
+							</div>
+							<div style="clear:both"></div>
+						</div>
+						<!-- pro-comment -->
+						<div class="pro-detail-info">
+							<div class="size-table">
+								<h4>
+									<a name="a1">产品尺码表</a> ：（单位：cm）
+								</h4>
+								<div class="size-list">
+									<table id="customers-size">
+										<tbody>
+											<tr>
+												<th class="co101">尺码</th>
+												<th class="co102">号型（身高/胸围）</th>
+												<th class="co103">肩宽</th>
+												<th class="co104">胸围</th>
+												<th class="co105">后衣长</th>
+												<th class="co106">袖长</th>
+											</tr>
+											<tr bgcolor="#ffffff" align="center">
+												<td>S</td>
+												<td>165/88A</td>
+												<td>43</td>
+												<td>96</td>
+												<td>66</td>
+												<td>18</td>
+											</tr>
+											<tr bgcolor="#ffffff" align="center" class="alt">
+												<td>M</td>
+												<td>170/92A</td>
+												<td>44</td>
+												<td>100</td>
+												<td>68</td>
+												<td>19</td>
+											</tr>
+											<tr bgcolor="#ffffff" align="center">
+												<td>L</td>
+												<td>175/96A</td>
+												<td>45</td>
+												<td>104</td>
+												<td>70</td>
+												<td>20</td>
+											</tr>
+											<tr bgcolor="#ffffff" align="center" class="alt">
+												<td>XL</td>
+												<td>180/100A</td>
+												<td>46</td>
+												<td>108</td>
+												<td>72</td>
+												<td>21</td>
+											</tr>
+											<tr bgcolor="#ffffff" align="center">
+												<td>XXL</td>
+												<td>185/104A</td>
+												<td>47</td>
+												<td>112</td>
+												<td>74</td>
+												<td>22</td>
+											</tr>
+											<tr bgcolor="#ffffff" align="center" class="alt">
+												<td>XXXL</td>
+												<td>190/108B</td>
+												<td>48</td>
+												<td>116</td>
+												<td>76</td>
+												<td>23</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="wash-info">
+								<strong>洗涤注意</strong> <br> 印花部分不要用力摩擦。 <br>
+								与相似颜色的制品一同水洗。 <br> 避免衣物长时间浸泡在水里或放置在潮湿状态下。
+								<div class="pic-display">
+									<img src="images/002r.jpg" alt="" class="" /> <img
+										src="images/003r.jpg" alt="" class="" /> <img
+										src="images/004r.jpg" alt="" class="" /> <img
+										src="images/pkr.jpg" alt="" class=""
+										style="width:750px;height:587px;" />
+								</div>
+							</div>
+						</div>
+						<!--pro-detail-info -->
+						<div style="clear:both;"></div>
+					</div>
+					<!-- blogs -->
+				</div>
+				<!-- /#contents -->
+				<div id="footer">
+					<div id="description">
+						<div>
+							<a href="index.jsp" class="logo"></a> <span>&copy;
+								Copyright &copy; 2011. <a href="index.html">speedo team</a> All
+								rights reserved</span>
+						</div>
+						<p>有一根火柴，它走在路上，走呀走，走呀走，走呀走呀走呀走……它忽然觉得头痒，于是它就挠呀挠，
+							挠呀挠，挠呀挠呀挠呀挠……後来....後来它把自己烧著了，最後灭了~~~</p>
+						<p>小榛：为什么小红帽是平胸？ 小喵：为什么呀！ 小榛：因为她奶奶被大灰狼吃了...= =！</p>
+
+					</div>
+					<div class="navigation">
+						<a href="index.jsp">Home</a>| 
+						<a href="servlet/ListProduct">Shop</a>| 
+						<a href="blog.html">Blog</a>|
+						<a href="about.html">About</a>| 					 
+						<a href="contact-us.html">Contact Us</a>
+					</div>
+				</div>
+				<!-- /#footer -->
+			</div>
+			<!-- /#page -->
+		</div>
+		</div><!-- /#background -->
+</body>
+<script type='text/javascript' src='xk/jquery-1.7.1.js'></script>
+<script type='text/javascript'>
+$('.add-cart').click(
+
+function(event){
+
+	$.post(
+	"/SpeedoWeb/baket",
+{num:$('#num').val(), id:${requestScope.id} },function(data){alert('加入购物车成功');}
+	);
+}
+)
+</script>
+</html>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <filter>
+     <filter-name>encoding</filter-name>
+  <filter-class>edu.csu.speedo.filter.EncodingFilter</filter-class>
+  <init-param>
+   <param-name>encoding</param-name>
+   <param-value>UTF-8</param-value>
+  </init-param>
+ </filter>
+ <filter-mapping>
+    <filter-name>encoding</filter-name>
+  <url-pattern>/*</url-pattern>
+   </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ControlReg</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ControlReg</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ControlLogin</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ControlLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ListUser</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ListUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelUser</servlet-name>
+    <servlet-class>edu.csu.speedo.control.DelUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RequestForward</servlet-name>
+    <servlet-class>edu.csu.speedo.control.RequestForward</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditUser</servlet-name>
+    <servlet-class>edu.csu.speedo.control.EditUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DisplayUserInfo</servlet-name>
+    <servlet-class>edu.csu.speedo.control.DisplayUserInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadFile</servlet-name>
+    <servlet-class>edu.csu.speedo.control.UploadFile</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>buycar</servlet-name>
+    <servlet-class>edu.csu.speedo.control.buycar</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>baket</servlet-name>
+    <servlet-class>edu.csu.speedo.control.baket</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Ncheck</servlet-name>
+    <servlet-class>edu.csu.speedo.control.Ncheck</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ListPicture</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ListPicture</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ListProduct</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ListProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowItem</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ShowItem</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowPro</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ShowPro</servlet-class>
+  </servlet>
+
+ <servlet>
+    <servlet-name>ControlDIY</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ControlDIY</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ApplyOrder</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ApplyOrder</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckCodeImage</servlet-name>
+    <servlet-class>edu.csu.speedo.control.CheckCodeImage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AvgCommentOfPicture</servlet-name>
+    <servlet-class>edu.csu.speedo.control.AvgCommentOfPicture</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetProduct</servlet-name>
+    <servlet-class>edu.csu.speedo.control.GetProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ajaxcart</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ajaxcart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckCode</servlet-name>
+    <servlet-class>edu.csu.speedo.control.CheckCode</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ControlLogout</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ControlLogout</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowPersonInfo</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ShowPersonInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowPicItem</servlet-name>
+    <servlet-class>edu.csu.speedo.control.ShowPicItem</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewPicCom</servlet-name>
+    <servlet-class>edu.csu.speedo.control.NewPicCom</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ControlReg</servlet-name>
+    <url-pattern>/servlet/ControlReg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControlLogin</servlet-name>
+    <url-pattern>/servlet/ControlLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListUser</servlet-name>
+    <url-pattern>/servlet/ListUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelUser</servlet-name>
+    <url-pattern>/servlet/DelUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestForward</servlet-name>
+    <url-pattern>/servlet/RequestForward</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditUser</servlet-name>
+    <url-pattern>/servlet/EditUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayUserInfo</servlet-name>
+    <url-pattern>/servlet/DisplayUserInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadFile</servlet-name>
+    <url-pattern>/servlet/UploadFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buycar</servlet-name>
+    <url-pattern>/buycar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>baket</servlet-name>
+    <url-pattern>/baket</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Ncheck</servlet-name>
+    <url-pattern>/servlet/Ncheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListPicture</servlet-name>
+    <url-pattern>/servlet/ListPicture</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListProduct</servlet-name>
+    <url-pattern>/servlet/ListProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowItem</servlet-name>
+    <url-pattern>/servlet/ShowItem</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControlDIY</servlet-name>
+    <url-pattern>/servlet/ControlDIY</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowPro</servlet-name>
+    <url-pattern>/ShowPro</url-pattern>
+
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ApplyOrder</servlet-name>
+    <url-pattern>/servlet/ApplyOrder</url-pattern>
+
+  </servlet-mapping>	
+  <servlet-mapping>
+    <servlet-name>CheckCodeImage</servlet-name>
+    <url-pattern>/servlet/CheckCodeImage</url-pattern>
+    </servlet-mapping>
+
+
+ 
+  <servlet-mapping>
+    <servlet-name>AvgCommentOfPicture</servlet-name>
+    <url-pattern>/servlet/AvgCommentOfPicture</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetProduct</servlet-name>
+    <url-pattern>/servlet/GetProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ajaxcart</servlet-name>
+    <url-pattern>/servlet/ajaxcart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckCode</servlet-name>
+    <url-pattern>/servlet/CheckCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControlLogout</servlet-name>
+    <url-pattern>/servlet/ControlLogout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowPersonInfo</servlet-name>
+    <url-pattern>/servlet/ShowPersonInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowPicItem</servlet-name>
+    <url-pattern>/servlet/ShowPicItem</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewPicCom</servlet-name>
+    <url-pattern>/servlet/NewPicCom</url-pattern>
+  </servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+</web-app>

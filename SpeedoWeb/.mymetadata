@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="SpeedoWeb"
+  id="myeclipse.1363401244116"
+  context-root="/SpeedoWeb"
+  j2ee-spec="6.0"
+  archive="SpeedoWeb.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
